@@ -1,0 +1,21 @@
+customer_id,order_date,product,category,quantity,price,region,revenue
+1001,2025-01-15,Wireless Mouse,Electronics,2,25.50,North,51.00
+1002,2025-01-16,Ergonomic Chair,Furniture,1,180.00,South,180.00
+1003,2025-01-17,Cotton T-Shirt,Clothing,3,15.00,West,45.00
+1004,2025-01-18,Mechanical Keyboard,Electronics,1,85.00,North,85.00
+1005,2025-01-19,Standing Desk,Furniture,1,350.00,East,350.00
+1006,2025-01-20,Denim Jeans,Clothing,2,40.00,West,80.00
+1007,2025-01-21,Noise-Cancelling Headphones,Electronics,1,120.00,South,120.00
+1008,2025-01-22,Desk Lamp,Furniture,2,30.00,East,60.00
+1009,2025-01-23,Running Shoes,Clothing,1,75.00,North,75.00
+1010,2025-01-24,USB-C Hub,Electronics,3,20.00,South,60.00
+1011,2025-01-25,Bookshelf,Furniture,1,110.00,West,110.00
+1012,2025-01-26,Winter Jacket,Clothing,1,95.00,North,95.00
+1013,2025-01-27,Bluetooth Speaker,Electronics,2,45.00,East,90.00
+1014,2025-01-28,Office Mat,Furniture,2,22.00,South,44.00
+1015,2025-01-29,Casual Hoodie,Clothing,2,35.00,West,70.00
+1015,2025-01-29,Casual Hoodie,Clothing,2,35.00,West,70.00
+1017,2025-01-30,Webcam HD,Electronics,1,60.00,North,60.00
+1018,2025-01-31,Filing Cabinet,Furniture,1,130.00,East,130.00
+1019,2025-02-01,Sports Socks,Clothing,5,8.00,South,40.00
+1020,2025-02-02,Gaming Monitor,Electronics,1,250.00,,250.00
