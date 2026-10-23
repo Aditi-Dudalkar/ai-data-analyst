@@ -1,4 +1,4 @@
-"""Domain exceptions for dataset management and profiling."""
+"""Domain exceptions for dataset management, profiling, and analysis planning."""
 
 
 class DatasetError(Exception):
@@ -71,3 +71,23 @@ class CorruptDatasetError(DatasetValidationError):
 
     def __init__(self, message: str = "Failed to parse CSV dataset. The file may be corrupted.") -> None:
         super().__init__(message, code="CORRUPT_DATASET")
+
+
+class PlanError(Exception):
+    """Base exception for analysis planning operations."""
+
+    def __init__(self, message: str, code: str = "PLAN_ERROR") -> None:
+        super().__init__(message)
+        self.message = message
+        self.code = code
+
+
+class UnknownQuestionError(PlanError):
+    """Raised when the manual planner receives an unrecognized question."""
+
+    def __init__(self, question: str) -> None:
+        super().__init__(
+            f"Unable to manually generate an analysis plan for unrecognized question: '{question}'.",
+            code="UNKNOWN_QUESTION",
+        )
+        self.question = question
