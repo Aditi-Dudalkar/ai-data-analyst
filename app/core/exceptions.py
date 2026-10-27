@@ -91,3 +91,15 @@ class UnknownQuestionError(PlanError):
             code="UNKNOWN_QUESTION",
         )
         self.question = question
+
+
+class PlanGenerationError(PlanError):
+    """Raised when the agent fails to generate a valid AnalysisPlan after all retries."""
+
+    def __init__(self, attempts: int, last_error: str = "") -> None:
+        msg = f"Failed to generate a valid analysis plan after {attempts} attempt(s)."
+        if last_error:
+            msg += f" Last error: {last_error}"
+        super().__init__(msg, code="PLAN_GENERATION_FAILED")
+        self.attempts = attempts
+        self.last_error = last_error
